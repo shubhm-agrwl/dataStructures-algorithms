@@ -1,7 +1,7 @@
 package com.shubham.dataStructuresAlgorithms;
 
 /**
- * Hello world!
+ * @author Shubham Agrawal
  *
  */
 public class StartPractice {
