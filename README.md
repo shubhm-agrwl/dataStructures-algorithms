@@ -12,3 +12,9 @@ Given a string, find the length of the longest substring without repeating chara
      
 #Problem 4: 
 There are two sorted arrays nums1 and nums2 of size m and n respectively. Find the median of the two sorted arrays. The overall run time complexity should be O(log(m+n)).
+
+#Problem 5: 
+Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000.
+
+#Problem 6: 
+The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows (you may want to display this pattern in a fixed font for better legibility)

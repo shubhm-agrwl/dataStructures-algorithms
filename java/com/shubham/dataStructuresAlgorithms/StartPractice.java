@@ -45,6 +45,20 @@ public class StartPractice {
 
     // Medianof2SortedArrays.medianOf2SortedArraysMain();
 
+    /*
+     * Problem 5: Given a string s, find the longest palindromic substring in s. You may assume that
+     * the maximum length of s is 1000.
+     */
+
+    // LongestPalindromicSubstring.longestPalindromicSubstringMain();
+
+    /*
+     * Problem 6: The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of
+     * rows: (you may want to display this pattern in a fixed font for better legibility)
+     */
+
+    // ZigZagConversion.ZigZagConversionMain();
+
   }
 
 }
