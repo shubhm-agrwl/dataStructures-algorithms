@@ -18,3 +18,6 @@ Given a string s, find the longest palindromic substring in s. You may assume th
 
 #Problem 6: 
 The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows (you may want to display this pattern in a fixed font for better legibility)
+
+#Problem 7:
+Given a 32-bit signed integer, reverse digits of an integer.

@@ -59,6 +59,12 @@ public class StartPractice {
 
     // ZigZagConversion.ZigZagConversionMain();
 
+    /*
+     * Problem 7: Given a 32-bit signed integer, reverse digits of an integer.
+     */
+
+    // ReverseDigits.ReverseDigitsMain();
+
   }
 
 }
