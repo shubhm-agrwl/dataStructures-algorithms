@@ -21,3 +21,15 @@ The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of 
 
 #Problem 7:
 Given a 32-bit signed integer, reverse digits of an integer.
+
+#Problem 8: 
+String to Integer (atoi)
+
+#Problem 9: 
+Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
+
+#Problem 10: 
+Given an input string (s) and a pattern (p), implement regular expression matching with support for '.' and '*'.
+     
+#Problem 11: 
+Given n non-negative integers a1, a2, ..., an , where each represents a point at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0). Find two lines, which together with x-axis forms a container, such that the container contains the most water.
