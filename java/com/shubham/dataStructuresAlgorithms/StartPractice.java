@@ -94,6 +94,42 @@ public class StartPractice {
 
     // ContainerWithMostWater.ContainerWithMostWaterMain();
 
+    /*
+     * Problem 12: Write a function to find the longest common prefix string amongst an array of
+     * strings.
+     */
+
+    // LongestCommonPrefix.LongestCommonPrefixMain();
+
+    /*
+     * Problem 13: Given an array nums of n integers, are there elements a, b, c in nums such that a
+     * + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
+     */
+
+    // ThreeSum.ThreeSumMain();
+
+    /*
+     * Problem 14: Given an array nums of n integers and an integer target, find three integers in
+     * nums such that the sum is closest to target. Return the sum of the three integers. You may
+     * assume that each input would have exactly one solution.
+     */
+
+    // ThreeSumClosest.threeSumClosestMain();
+
+    /*
+     * Problem 15: Given a string containing digits from 2-9 inclusive, return all possible letter
+     * combinations that the number could represent.
+     */
+
+    // PhoneLetterCombination.PhoneLetterCombinationMain();
+
+    /*
+     * Problem 16: Given an array nums of n integers and an integer target, are there elements a, b,
+     * c, and d in nums such that a + b + c + d = target? Find all unique quadruplets in the array
+     * which gives the sum of target.
+     */
+
+    // FourSum.FourSumMain();
   }
 
 }
