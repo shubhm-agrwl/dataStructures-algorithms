@@ -1,4 +1,4 @@
-package com.shubham.dataStructuresAlgorithms;
+package com.shubham.dataStructures.hashMap;
 
 public class ThreeSumClosest {
 

@@ -48,3 +48,21 @@ Given a string containing digits from 2-9 inclusive, return all possible letter 
 
 #Problem 16: 
 Given an array nums of n integers and an integer target, are there elements a, b, c, and d in nums such that a + b + c + d = target? Find all unique quadruplets in the array which gives the sum of target.
+
+#Problem 17:
+Given a linked list, remove the n-th node from the end of list and return its head.
+
+#Problem 18:
+Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+#Problem 19:
+Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.
+
+#Problem 20:
+Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
+
+#Problem 21:
+Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
+
+#Problem 22:
+Given a linked list, swap every two adjacent nodes and return its head.

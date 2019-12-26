@@ -1,4 +1,4 @@
-package com.shubham.dataStructuresAlgorithms;
+package com.shubham.dataStructures.string;
 
 public class LongestPalindromicSubstring {
 

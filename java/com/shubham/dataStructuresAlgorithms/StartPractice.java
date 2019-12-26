@@ -130,6 +130,48 @@ public class StartPractice {
      */
 
     // FourSum.FourSumMain();
+
+    /*
+     * Problem 17: Given a linked list, remove the n-th node from the end of list and return its
+     * head.
+     */
+
+    // RemoveNthFromEnd.RemoveNthFromEndMain();
+
+    /*
+     * Problem 18: Given a string containing just the characters '(', ')', '{', '}', '[' and ']',
+     * determine if the input string is valid.
+     */
+
+    // ValidString.validStringMain();
+
+    /*
+     * Problem 19: Merge two sorted linked lists and return it as a new list. The new list should be
+     * made by splicing together the nodes of the first two lists.
+     */
+
+    // Merge2SortedLL.Merge2SortedLLMain();
+
+    /*
+     * Problem 20: Given n pairs of parentheses, write a function to generate all combinations of
+     * well-formed parentheses.
+     */
+
+    // GenerateParanthesis.GenerateParanthesisMain();
+
+    /*
+     * Problem 21: Merge k sorted linked lists and return it as one sorted list. Analyze and
+     * describe its complexity.
+     */
+
+    // MergeKSortedLL.MergedKSortedListMain();
+
+    /*
+     * Problem 22: Given a linked list, swap every two adjacent nodes and return its head.
+     */
+
+    // SwapNodes.SwapNodesMain();
+
   }
 
 }

@@ -1,4 +1,4 @@
-package com.shubham.dataStructuresAlgorithms;
+package com.shubham.dataStructures.linkedList;
 
 public class AddTwoNumbersSLL {
 
@@ -30,7 +30,7 @@ public class AddTwoNumbersSLL {
   }
 
   public static void addTwoNumbersMain() {
-    
+
     /*
      * 
      * Problem 2: You are given two non-empty linked lists representing two non-negative integers.
@@ -43,7 +43,7 @@ public class AddTwoNumbersSLL {
      * 
      * Input: (2 -> 4 -> 3) + (5 -> 6 -> 4) Output: 7 -> 0 -> 8 Explanation: 342 + 465 = 807.
      */
-    
+
     /*
      * ListNode first = new ListNode(2); ListNode second = new ListNode(4); ListNode third = new
      * ListNode(3);

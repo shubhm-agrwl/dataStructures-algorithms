@@ -1,4 +1,4 @@
-package com.shubham.dataStructuresAlgorithms;
+package com.shubham.dataStructures.string;
 
 import java.util.ArrayList;
 import java.util.HashMap;
