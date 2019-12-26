@@ -1,4 +1,4 @@
-package com.sentienz.dataStructures.stack;
+package com.shubham.dataStructures.stack;
 
 import java.util.HashMap;
 import java.util.Stack;

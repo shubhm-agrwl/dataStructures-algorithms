@@ -1,4 +1,4 @@
-package com.sentienz.algorithms.problems;
+package com.shubham.algorithms.problems;
 
 import java.util.ArrayList;
 import java.util.HashMap;
