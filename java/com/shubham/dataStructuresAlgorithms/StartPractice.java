@@ -172,6 +172,20 @@ public class StartPractice {
 
     // SwapNodes.SwapNodesMain();
 
+    /*
+     * Problem 23: Given a linked list, reverse the nodes of a linked list k at a time and return
+     * its modified list.
+     */
+
+    // ReverseNodesKGroup.ReverseNodesKGroupMain();
+
+    /*
+     * Problem 24: Given a sorted array nums, remove the duplicates in-place such that each element
+     * appear only once and return the new length.
+     */
+
+    // RemoveDuplicatesSortedArray.RemoveDuplicatesSortedArrayMain();
+
   }
 
 }

@@ -66,3 +66,9 @@ Merge k sorted linked lists and return it as one sorted list. Analyze and descri
 
 #Problem 22:
 Given a linked list, swap every two adjacent nodes and return its head.
+
+#Problem 23:
+Given a linked list, reverse the nodes of a linked list k at a time and return its modified list.
+
+#Problem 24:
+Given a sorted array nums, remove the duplicates in-place such that each element appear only once and return the new length.
