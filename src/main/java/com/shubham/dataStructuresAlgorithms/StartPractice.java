@@ -2,15 +2,15 @@ package com.shubham.dataStructuresAlgorithms;
 
 /**
  * @author Shubham Agrawal
- *
  */
 public class StartPractice {
+
   public static void main(String[] args) {
 
     System.out.println("Let's Start with Hello World!");
 
     /*
-     * 
+     *
      * Problem 1: Given an array of integers, return indices of the two numbers such that they add
      * up to a specific target.
      */
@@ -18,7 +18,7 @@ public class StartPractice {
     // TwoSum.twoSumMain();
 
     /*
-     * 
+     *
      * Problem 2: You are given two non-empty linked lists representing two non-negative integers.
      * The digits are stored in reverse order and each of their nodes contain a single digit. Add
      * the two numbers and return it as a linked list.
@@ -28,7 +28,7 @@ public class StartPractice {
 
 
     /*
-     * 
+     *
      * Problem 3: Given a string, find the length of the longest substring without repeating
      * characters.
      */
@@ -38,7 +38,7 @@ public class StartPractice {
 
     /*
      * Problem 4: There are two sorted arrays nums1 and nums2 of size m and n respectively.
-     * 
+     *
      * Find the median of the two sorted arrays. The overall run time complexity should be O(log
      * (m+n)).
      */
@@ -186,6 +186,65 @@ public class StartPractice {
 
     // RemoveDuplicatesSortedArray.RemoveDuplicatesSortedArrayMain();
 
+    /*
+     * Problem 25: Given an array nums and a value val, remove all instances of that value in-place and return the new length.
+     */
+
+    // RemoveElement.RemoveElementMain();
+
+    /*
+     * Problem 26: Given two integers dividend and divisor, divide two integers without using multiplication, division and mod operator.
+     */
+
+    // Devide2Integers.Devide2IntegersMain();
+
+    /*
+     * Problem 27: Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers.
+     */
+
+    // NextPermutation.NextPermutationMain();
+
+    /*
+     * Problem 28: Given a string containing just the characters '(' and ')', find the length of the longest valid (well-formed) parentheses substring.
+     */
+
+    // LongestValidParentheses.LongestValidParenthesesMain();
+
+    /*
+     * Problem 29: Search in Rotated Sorted Array
+     */
+
+    // SearchRotatedSortedArray.SearchRotatedSortedArrayMain();
+
+    /*
+     * Problem 30: Given an array of integers nums sorted in ascending order, find the starting and ending position of a given target value.
+     */
+
+    // SearchRangeSortedArray.SearchRangeSortedArrayMain();
+
+    /*
+     * Problem 31: Given a sorted array and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
+     */
+
+    //SearchInsertPosition.SearchInsertPositionMain();
+
+    /*
+     * Problem 32: Determine if a 9x9 Sudoku board is valid.
+     */
+
+    //ValidSudoku.validSudokuMain();
+
+    /*
+     * Problem 33: Write a program to solve a Sudoku puzzle by filling the empty cells.
+     */
+
+    // SudokuSolver.sudokuSolverMain();
+
+    /*
+     * Problem 34: The count-and-say sequence is the sequence of integers
+     */
+
+    // CountSay.countSayMain();
   }
 
 }
