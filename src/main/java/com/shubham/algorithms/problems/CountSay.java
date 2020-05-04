@@ -20,11 +20,11 @@ public class CountSay {
   Note: Each term of the sequence of integers will be represented as a string.
   */
 
-  public static void countSayMain() {
+  public static void main(String[] args) {
     System.out.println(countAndSay(4));
   }
 
-  public static String countAndSay(int n) {
+  private static String countAndSay(int n) {
     // Base cases
     if (n == 1) {
       return "1";

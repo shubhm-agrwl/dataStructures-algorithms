@@ -13,7 +13,7 @@ public class ValidSudoku {
     Each of the 9 3x3 sub-boxes of the grid must contain the digits 1-9 without repetition.
   */
 
-  public static void validSudokuMain() {
+  public static void main(String[] args) {
     char[][] board = {
         {'8', '3', '.', '.', '7', '.', '.', '.', '.'},
         {'6', '.', '.', '1', '9', '5', '.', '.', '.'},
@@ -29,7 +29,7 @@ public class ValidSudoku {
     System.out.println(isValidSudoku(board));
   }
 
-  public static boolean isValidSudoku(char[][] board) {
+  private static boolean isValidSudoku(char[][] board) {
     for (int i = 0; i < 9; i++) {
       if (!(validRow(i, board) && validCol(i, board))) {
         return false;

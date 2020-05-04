@@ -28,11 +28,9 @@ public class RemoveElement {
   It doesn't matter what values are set beyond the returned length.
   */
 
-  public static void RemoveElementMain() {
-
+  public static void main(String[] args) {
     int[] nums = {0, 1, 2, 2, 3, 0, 4, 2};
     System.out.println(removeElement2Pointer(nums, 2));
-
   }
 
   private static int removeElement2Pointer(int[] nums, int elementToDelete) {

@@ -2,28 +2,27 @@ package com.shubham.dataStructures.string;
 
 public class LongestPalindromicSubstring {
 
-  public static void longestPalindromicSubstringMain() {
-
+  public static void main(String[] args) {
     /*
      * Given a string s, find the longest palindromic substring in s. You may assume that the
      * maximum length of s is 1000.
-     * 
+     *
      * Example 1:
-     * 
+     *
      * Input: "babad" Output: "bab" Note: "aba" is also a valid answer.
-     * 
+     *
      * Example 2:
-     * 
+     *
      * Input: "cbbd" Output: "bb"
      */
 
     System.out.println(longestPalindrome("babad"));
-
   }
 
-  public static String longestPalindrome(String s) {
-    if (s == null || s.length() < 1)
+  private static String longestPalindrome(String s) {
+    if (s == null || s.length() < 1) {
       return "";
+    }
     int start = 0, end = 0;
     for (int i = 0; i < s.length(); i++) {
       int len1 = expandAroundCenter(s, i, i);

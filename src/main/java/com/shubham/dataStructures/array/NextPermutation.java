@@ -19,14 +19,12 @@ public class NextPermutation {
 
    */
 
-  public static void NextPermutationMain() {
-
+  public static void main(String[] args) {
     int[] nums = {0, 2, 3};
     nextPermutation(nums);
-
   }
 
-  public static void nextPermutation(int[] nums) {
+  private static void nextPermutation(int[] nums) {
 
     int i = nums.length - 2;
     while (i >= 0 && nums[i + 1] <= nums[i]) {

@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ZigZagConversion {
-  
-  public static void ZigZagConversionMain() {
-    
-    /*The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: 
+
+  public static void main(String[] args) {
+
+    /*
+    The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this:
      * (you may want to display this pattern in a fixed font for better legibility)
 
-    
     P   A   H   N
     A P L S I I G
     Y   I   R
@@ -18,8 +18,6 @@ public class ZigZagConversion {
     And then read line by line: "PAHNAPLSIIGYIR"
 
     Write the code that will take a string and make this conversion given a number of rows:
-
-    string convert(string s, int numRows);
 
     Example 1:
 
@@ -39,46 +37,55 @@ public class ZigZagConversion {
     */
 
     System.out.println(convert("PAYPALISHIRING", 4));
-    
   }
-  
-  public static String convert(String s, int numRows) {
-    if (numRows == 1) return s;
 
-    List<StringBuilder> rows = new ArrayList<StringBuilder>();
-    for (int i = 0; i < Math.min(numRows, s.length()); i++)
-        rows.add(new StringBuilder());
+  private static String convert(String s, int numRows) {
+    if (numRows == 1) {
+      return s;
+    }
+
+    List<StringBuilder> rows = new ArrayList<>();
+    for (int i = 0; i < Math.min(numRows, s.length()); i++) {
+      rows.add(new StringBuilder());
+    }
 
     int curRow = 0;
     boolean goingDown = false;
 
     for (char c : s.toCharArray()) {
-        rows.get(curRow).append(c);
-        if (curRow == 0 || curRow == numRows - 1) goingDown = !goingDown;
-        curRow += goingDown ? 1 : -1;
+      rows.get(curRow).append(c);
+      if (curRow == 0 || curRow == numRows - 1) {
+        goingDown = !goingDown;
+      }
+      curRow += goingDown ? 1 : -1;
     }
 
     StringBuilder ret = new StringBuilder();
-    for (StringBuilder row : rows) ret.append(row);
+    for (StringBuilder row : rows) {
+      ret.append(row);
+    }
     return ret.toString();
   }
-  
+
   public String convert2(String s, int numRows) {
 
-    if (numRows == 1) return s;
+    if (numRows == 1) {
+      return s;
+    }
 
     StringBuilder ret = new StringBuilder();
     int n = s.length();
     int cycleLen = 2 * numRows - 2;
 
     for (int i = 0; i < numRows; i++) {
-        for (int j = 0; j + i < n; j += cycleLen) {
-            ret.append(s.charAt(j + i));
-            if (i != 0 && i != numRows - 1 && j + cycleLen - i < n)
-                ret.append(s.charAt(j + cycleLen - i));
+      for (int j = 0; j + i < n; j += cycleLen) {
+        ret.append(s.charAt(j + i));
+        if (i != 0 && i != numRows - 1 && j + cycleLen - i < n) {
+          ret.append(s.charAt(j + cycleLen - i));
         }
+      }
     }
     return ret.toString();
-}
+  }
 
 }

@@ -5,15 +5,15 @@ public class MergeKSortedLL {
   /*
    * Merge k sorted linked lists and return it as one sorted list. Analyze and describe its
    * complexity.
-   * 
+   *
    * Example:
-   * 
+   *
    * Input: [ 1->4->5, 1->3->4, 2->6 ] Output: 1->1->2->3->4->4->5->6
-   * 
-   * 
+   *
+   *
    */
 
-  public static void MergedKSortedListMain() {
+  public static void main(String[] args) {
     ListNode first = new ListNode(1);
     ListNode second = new ListNode(4);
     ListNode third = new ListNode(5);
@@ -39,8 +39,9 @@ public class MergeKSortedLL {
 
   private static ListNode mergeKLists(ListNode[] lists) {
     int last = lists.length - 1;
-    if (last < 0)
+    if (last < 0) {
       return null;
+    }
     while (last != 0) {
       int i = 0, j = last;
 
@@ -55,8 +56,9 @@ public class MergeKSortedLL {
         j--;
 
         // If all pairs are merged, update last
-        if (i >= j)
+        if (i >= j) {
           last = j;
+        }
       }
     }
 

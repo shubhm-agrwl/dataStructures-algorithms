@@ -21,15 +21,13 @@ public class SearchRangeSortedArray {
 
   */
 
-  public static void SearchRangeSortedArrayMain() {
-
+  public static void main(String[] args) {
     int nums[] = {5, 7, 7, 8, 8, 10};
     int res[] = searchRange(nums, 8);
 
     for (int x : res) {
       System.out.println(x);
     }
-
   }
 
   // returns leftmost (or rightmost) index at which `target` should be
@@ -50,7 +48,7 @@ public class SearchRangeSortedArray {
     return lo;
   }
 
-  public static int[] searchRange(int[] nums, int target) {
+  private static int[] searchRange(int[] nums, int target) {
     int[] targetRange = {-1, -1};
 
     int leftIdx = extremeInsertionIndex(nums, target, true);

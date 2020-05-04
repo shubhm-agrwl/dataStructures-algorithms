@@ -20,7 +20,7 @@ public class LongestValidParentheses {
   Explanation: The longest valid parentheses substring is "()()"
   */
 
-  public static void LongestValidParenthesesMain() {
+  public static void main(String[] args) {
 
     System.out.println(longestValidParanthesesDP(")()())"));
     System.out.println(longestValidParenthesesStack(")()())"));
@@ -28,7 +28,7 @@ public class LongestValidParentheses {
 
   }
 
-  public static int longestValidParanthesesDP(String s) {
+  private static int longestValidParanthesesDP(String s) {
 
     int maxans = 0;
     int dp[] = new int[s.length()];
@@ -45,7 +45,7 @@ public class LongestValidParentheses {
     return maxans;
   }
 
-  public static int longestValidParenthesesStack(String s) {
+  private static int longestValidParenthesesStack(String s) {
     int maxans = 0;
     Stack<Integer> stack = new Stack<>();
     stack.push(-1);
@@ -64,7 +64,7 @@ public class LongestValidParentheses {
     return maxans;
   }
 
-  public static int longestValidParenthesesWithoutExtraSpace(String s) {
+  private static int longestValidParenthesesWithoutExtraSpace(String s) {
     int left = 0, right = 0, maxlength = 0;
     for (int i = 0; i < s.length(); i++) {
       if (s.charAt(i) == '(') {

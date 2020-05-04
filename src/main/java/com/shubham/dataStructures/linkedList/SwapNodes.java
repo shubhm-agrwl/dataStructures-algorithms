@@ -13,7 +13,7 @@ public class SwapNodes {
    * 
    */
 
-  public static void SwapNodesMain() {
+  public static void main(String[] args) {
     ListNode first = new ListNode(1);
     ListNode second = new ListNode(2);
     ListNode third = new ListNode(3);

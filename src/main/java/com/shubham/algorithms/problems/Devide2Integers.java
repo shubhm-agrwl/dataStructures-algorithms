@@ -20,9 +20,9 @@ public class Devide2Integers {
   Output: -2
    */
 
-  public static void Devide2IntegersMain() {
+  public static void main(String[] args) {
+    System.out.println(divide(-2147483648, -1));
 
-    System.out.println(Devide2Integers.divide(-2147483648, -1));
   }
 
   private static int divide(int dividend, int divisor) {

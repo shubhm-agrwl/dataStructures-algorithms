@@ -21,7 +21,7 @@ public class RemoveNthFromEnd {
    * 
    */
 
-  public static void RemoveNthFromEndMain() {
+  public static void main(String[] args) {
     ListNode first = new ListNode(1);
     ListNode second = new ListNode(2);
     ListNode third = new ListNode(3);
@@ -45,13 +45,13 @@ public class RemoveNthFromEnd {
     four.next = five;
 
     ListNode res2Pass = removeNthFromEnd2Pass(curr, 2);
-    
+
     curr = first;
     curr.next = second; // Link first node with the second node
     second.next = third;
     third.next = four;
     four.next = five;
-    
+
     ListNode res1Pass = removeNthFromEnd1Pass(curr, 2);
 
     while (res2Pass != null) {
@@ -63,6 +63,10 @@ public class RemoveNthFromEnd {
       System.out.println(res1Pass.val);
       res1Pass = res1Pass.next;
     }
+  }
+
+  public static void RemoveNthFromEndMain() {
+
   }
 
   private static ListNode removeNthFromEnd1Pass(ListNode head, int n) {

@@ -15,7 +15,7 @@ public class SudokuSolver {
 
   */
 
-  public static void sudokuSolverMain() {
+  public static void main(String[] args) {
     char[][] board = {
         {'5', '3', '.', '.', '7', '.', '.', '.', '.'},
         {'6', '.', '.', '1', '9', '5', '.', '.', '.'},
@@ -31,9 +31,9 @@ public class SudokuSolver {
     solveSudoku(board);
   }
 
-  static char[][] board = new char[9][9];
+  private static char[][] board = new char[9][9];
 
-  public static void solveSudoku(char[][] board) {
+  private static void solveSudoku(char[][] board) {
     int[][] sudoku = new int[9][9];
     for (int i = 0; i < 9; i++) {
       for (int j = 0; j < 9; j++) {
@@ -56,7 +56,7 @@ public class SudokuSolver {
     return board;
   }
 
-  public static boolean solveSudoku(int[][] sudoku) {
+  private static boolean solveSudoku(int[][] sudoku) {
     int row = -1;
     int col = -1;
     boolean isEmpty = true;

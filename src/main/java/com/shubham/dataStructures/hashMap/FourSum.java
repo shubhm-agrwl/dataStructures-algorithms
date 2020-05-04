@@ -12,20 +12,20 @@ public class FourSum {
    * Given an array nums of n integers and an integer target, are there elements a, b, c, and d in
    * nums such that a + b + c + d = target? Find all unique quadruplets in the array which gives the
    * sum of target.
-   * 
+   *
    * Note:
-   * 
+   *
    * The solution set must not contain duplicate quadruplets.
-   * 
+   *
    * Example:
-   * 
+   *
    * Given array nums = [1, 0, -1, 0, -2, 2], and target = 0.
-   * 
+   *
    * A solution set is: [ [-1, 0, 0, 1], [-2, -1, 1, 2], [-2, 0, 0, 2] ]
-   * 
+   *
    */
 
-  public static void FourSumMain() {
+  public static void main(String[] args) {
     int[] nums = {-4, -3, -2, -1, 0, 0, 1, 2, 3, 4};
     System.out.println(fourSum(nums, 0));
   }
@@ -34,14 +34,16 @@ public class FourSum {
 
     Arrays.sort(nums);
     int n = nums.length;
-    List<List<Integer>> res = new ArrayList<List<Integer>>();
-    TreeSet<String> set = new TreeSet<String>();
+    List<List<Integer>> res = new ArrayList<>();
+    TreeSet<String> set = new TreeSet<>();
 
     // Store sums of all pairs in a hash table
-    HashMap<Integer, pair> mp = new HashMap<Integer, pair>();
-    for (int i = 0; i < n - 1; i++)
-      for (int j = i + 1; j < n; j++)
+    HashMap<Integer, pair> mp = new HashMap<>();
+    for (int i = 0; i < n - 1; i++) {
+      for (int j = i + 1; j < n; j++) {
         mp.put(nums[i] + nums[j], new pair(i, j));
+      }
+    }
 
     // Traverse through all pairs and search
     // for X - (current pair sum).
@@ -64,7 +66,7 @@ public class FourSum {
             String str = a[0] + ":" + a[1] + ":" + a[2] + ":" + a[3];
 
             if (!set.contains(str)) {
-              List<Integer> r = new ArrayList<Integer>();
+              List<Integer> r = new ArrayList<>();
               r.add(nums[i]);
               r.add(nums[j]);
               r.add(nums[p.first]);
@@ -80,10 +82,11 @@ public class FourSum {
     return res;
   }
 
-  static class pair {
+  private static class pair {
+
     int first, second;
 
-    public pair(int first, int second) {
+    private pair(int first, int second) {
       this.first = first;
       this.second = second;
     }

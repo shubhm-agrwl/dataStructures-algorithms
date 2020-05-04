@@ -25,15 +25,13 @@ package com.shubham.dataStructures.array;
 
 public class SearchRotatedSortedArray {
 
-  public static void SearchRotatedSortedArrayMain() {
-
+  public static void main(String[] args) {
     //int[] nums = {4, 5, 6, 7, 0, 1, 2};
     int[] nums = {1, 3};
     System.out.println(search(nums, 3));
-
   }
 
-  public static int search(int[] nums, int target) {
+  private static int search(int[] nums, int target) {
 
     int pivot = findPivot(nums, 0, nums.length - 1);
 

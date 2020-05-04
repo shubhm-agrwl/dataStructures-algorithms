@@ -5,14 +5,14 @@ public class Merge2SortedLL {
   /*
    * Merge two sorted linked lists and return it as a new list. The new list should be made by
    * splicing together the nodes of the first two lists.
-   * 
+   *
    * Example:
-   * 
+   *
    * Input: 1->2->4, 1->3->4 Output: 1->1->2->3->4->4
-   * 
+   *
    */
 
-  public static void Merge2SortedLLMain() {
+  public static void main(String[] args) {
     ListNode first = new ListNode(1);
     ListNode second = new ListNode(2);
     ListNode third = new ListNode(4);
