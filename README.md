@@ -129,3 +129,24 @@ Given an arbitrary ransom note string and another string containing letters from
 
 # Problem 43: Regular Expression matching
 Given an input string (s) and a pattern (p), implement regular expression matching with support for '.' and '*'.
+
+# Problem 44: First Unique Character
+Given a string, find the first non-repeating character in it and return it's index.
+
+# Problem 45: Check Straight Line
+You are given an array coordinates, coordinates[i] = [x, y], where [x, y] represents the coordinate of a point. Check if these points make a straight line in the XY plane.
+
+# Problem 46: Trapping Rain Water
+Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.
+
+# Problem 47: Valid Perfect Square
+Given a positive integer num, write a function which returns True if num is a perfect square else False.
+
+# Problem 48: First Unique Character
+Given a string, find the first non-repeating character in it and return it's index. If it doesn't exist, return -1.
+
+# Problem 49: Multiply Strings
+Given two non-negative integers num1 and num2 represented as strings, return the product of num1 and num2, also represented as a string.
+
+# Problem 50: Binary Tree Check Cousins
+Two nodes of a binary tree are cousins if they have the same depth, but have different parents. Return true if and only if the nodes corresponding to the values x and y are cousins.
