@@ -150,3 +150,9 @@ Given two non-negative integers num1 and num2 represented as strings, return the
 
 # Problem 50: Binary Tree Check Cousins
 Two nodes of a binary tree are cousins if they have the same depth, but have different parents. Return true if and only if the nodes corresponding to the values x and y are cousins.
+
+# Problem 51: Find Town Judge
+In a town, there are N people labelled from 1 to N. The town judge trusts nobody. Everybody (except for the town judge) trusts the town judge. There is exactly one person that satisfies properties 1 and 2.
+
+# Problem 52: Flood Fill
+Given a coordinate (sr, sc) representing the starting pixel (row and column) of the flood fill, and a pixel value newColor, "flood fill" the image.

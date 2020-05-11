@@ -21,12 +21,11 @@ package com.shubham.algorithms.problems;
 public class CheckStraightLine {
 
   public static void main(String[] args) {
-    CheckStraightLine checkStraightLine = new CheckStraightLine();
-    System.out.println(checkStraightLine
-        .checkStraightLine(new int[][]{{1, 1}, {2, 2}, {3, 4}, {4, 5}, {5, 6}, {7, 7}}));
+    System.out
+        .println(checkStraightLine(new int[][]{{1, 1}, {2, 2}, {3, 4}, {4, 5}, {5, 6}, {7, 7}}));
   }
 
-  private boolean checkStraightLine(int[][] coordinates) {
+  private static boolean checkStraightLine(int[][] coordinates) {
     int[] point1 = coordinates[1];
     int[] point2 = coordinates[0];
     float gSlope = slope(point1, point2);
@@ -42,7 +41,7 @@ public class CheckStraightLine {
     return true;
   }
 
-  private float slope(int[] p1, int[] p2) {
+  private static float slope(int[] p1, int[] p2) {
     if ((p1[0] - p2[0]) == 0) {
       return 0;
     }
