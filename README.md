@@ -156,3 +156,6 @@ In a town, there are N people labelled from 1 to N. The town judge trusts nobody
 
 # Problem 52: Flood Fill
 Given a coordinate (sr, sc) representing the starting pixel (row and column) of the flood fill, and a pixel value newColor, "flood fill" the image.
+
+# Problem 53: Single Element in Sorted Array
+You are given a sorted array consisting of only integers where every element appears exactly twice, except for one element which appears exactly once. Find this single element that appears only once.
