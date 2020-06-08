@@ -159,3 +159,39 @@ Given a coordinate (sr, sc) representing the starting pixel (row and column) of 
 
 # Problem 53: Single Element in Sorted Array
 You are given a sorted array consisting of only integers where every element appears exactly twice, except for one element which appears exactly once. Find this single element that appears only once.
+
+# Problem 54: Jump Game
+Each element in the array represents your maximum jump length at that position. Your goal is to reach the last index in the minimum number of jumps.
+
+# Problem 55: Odd Even Linked List
+Given a singly linked list, group all odd nodes together followed by the even nodes. Please note here we are talking about the node number and not the value in the nodes.
+
+# Probem 56: Trie
+Implement a trie with insert, search, and startsWith methods.
+
+# Probem 57: Count Square Submatrices
+Given a m * n matrix of ones and zeros, return how many square submatrices have all ones.
+
+# Probem 58: Largest Sub Array Having Equal 0,1
+Given an array, find the length of the largest Sub Array Having Equal 0,1
+
+# Probem 59: Replace 0 with 5
+You are given an integer N. You need to convert all zeroes of N to 5.
+
+# Probem 60: Remove K Digits
+Given a non-negative integer num represented as a string, remove k digits from the number so that the new number is the smallest possible.
+
+# Probem 61: Stock Span
+The span of the stock's price today is defined as the maximum number of consecutive days (starting from today and going backwards) for which the price of the stock was less than or equal to today's price.
+
+# Probem 62: Anagrams
+Given a string s and a non-empty string p, find all the start indices of p's anagrams in s.
+
+# Probem 63: Permutation String
+Given two strings s1 and s2, write a function to return true if s2 contains the permutation of s1. In other words, one of the first string's permutations is the substring of the second string.
+
+# Probem 64: WildCard Matching
+Given an input string (s) and a pattern (p), implement wildcard pattern matching with support for '?' and '*'.
+
+# Probem 65: Kth Smallest Element
+Given a binary search tree, write a function kthSmallest to find the kth smallest element in it.
