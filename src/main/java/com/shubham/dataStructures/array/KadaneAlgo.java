@@ -6,7 +6,7 @@ public class KadaneAlgo {
 
   }
 
-  private static int maxSubarraySum(int arr[], int n) {
+  public static int maxSubarraySum(int arr[], int n) {
 
     int max_so_far = Integer.MIN_VALUE,
         max_ending_here = 0, start = 0,
