@@ -44,18 +44,18 @@ public class RegularExpressionMatching {
     System.out.println(isMatch("mississippi", "mis*is*p*."));
   }
 
-  private static boolean isMatch(String text, String pattern) {
-    if (pattern.isEmpty()) {
-      return text.isEmpty();
+  private static boolean isMatch(String s, String p) {
+    if (p.isEmpty()) {
+      return s.isEmpty();
     }
     boolean firstMatch =
-        (!text.isEmpty() && (pattern.charAt(0) == text.charAt(0) || pattern.charAt(0) == '.'));
+        (!s.isEmpty() && (p.charAt(0) == s.charAt(0) || p.charAt(0) == '.'));
 
-    if (pattern.length() >= 2 && pattern.charAt(1) == '*') {
-      return (isMatch(text, pattern.substring(2))
-          || (firstMatch && isMatch(text.substring(1), pattern)));
+    if (p.length() >= 2 && p.charAt(1) == '*') {
+      return (isMatch(s, p.substring(2))
+          || (firstMatch && isMatch(s.substring(1), p)));
     } else {
-      return firstMatch && isMatch(text.substring(1), pattern.substring(1));
+      return firstMatch && isMatch(s.substring(1), p.substring(1));
     }
   }
 
