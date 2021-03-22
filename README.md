@@ -198,6 +198,6 @@ Given a binary search tree, write a function kthSmallest to find the kth smalles
 
 # More to Add
 
-| Leetcode Question | Question |
-| --- | --- |
-| 1 | Given an array of integers, return indices of the two numbers such that they add up to a specific target |
+| Leetcode | Class | Question |
+| --- | --- | --- |
+| 1 | TwoSum | Given an array of integers, return indices of the two numbers such that they add up to a specific target |
