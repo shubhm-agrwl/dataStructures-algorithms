@@ -197,3 +197,7 @@ Given an input string (s) and a pattern (p), implement wildcard pattern matching
 Given a binary search tree, write a function kthSmallest to find the kth smallest element in it.
 
 # More to Add
+
+| Leetcode Question | Question |
+| --- | --- |
+| 1 | Given an array of integers, return indices of the two numbers such that they add up to a specific target |
