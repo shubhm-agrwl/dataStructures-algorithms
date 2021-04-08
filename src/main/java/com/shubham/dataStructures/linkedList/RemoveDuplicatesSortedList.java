@@ -30,12 +30,41 @@ public class RemoveDuplicatesSortedList {
     ListNode current = head;
     while (current != null && current.next != null) {
       if (current.next.val == current.val) {
-        current.next = current.next.next;
+        current = current.next.next;
       } else {
         current = current.next;
       }
     }
     return head;
   }
+
+  public ListNode deleteDuplicatesAll(ListNode head) {
+    ListNode sentinel = new ListNode(0);
+
+    // predecessor = the last node
+    // before the sublist of duplicates
+    ListNode pred = sentinel;
+
+    while (head != null) {
+      // if it's a beginning of duplicates sublist
+      // skip all duplicates
+      if (head.next != null && head.val == head.next.val) {
+        // move till the end of duplicates sublist
+        while (head.next != null && head.val == head.next.val) {
+          head = head.next;
+        }
+        // skip all duplicates
+        pred.next = head.next;
+        // otherwise, move predecessor
+      } else {
+        pred = pred.next;
+      }
+
+      // move forward
+      head = head.next;
+    }
+    return sentinel.next;
+  }
+
 
 }
