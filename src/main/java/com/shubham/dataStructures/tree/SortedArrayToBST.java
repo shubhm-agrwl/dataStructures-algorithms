@@ -2,7 +2,7 @@ package com.shubham.dataStructures.tree;
 
 import com.shubham.lcFebChallenge.TreeNode;
 
-public class SortedToBST {
+public class SortedArrayToBST {
 
   public TreeNode sortedArrayToBST(int[] nums) {
     if (nums == null) {
