@@ -1,5 +1,7 @@
 package com.shubham.dataStructures.array;
 
+import java.util.Arrays;
+
 public class BuySellStock {
 
   public static void main(String[] args) {
@@ -59,6 +61,35 @@ public class BuySellStock {
       hold = Math.max(hold, cash - prices[i]);
     }
     return cash;
+  }
+
+  public int maxProfitAtMost2Transactions(int[] prices) {
+    int k = 2;
+    int buy[] = new int[k + 1];
+    int sell[] = new int[k + 1];
+    Arrays.fill(buy, Integer.MAX_VALUE);
+
+    for (int price : prices) {
+      for (int i = 1; i <= k; i++) {
+        buy[i] = Math.min(buy[i], price - sell[i - 1]);
+        sell[i] = Math.max(sell[i], price - buy[i]);
+      }
+    }
+    return sell[k];
+  }
+
+  public int maxProfitAtMostKTransactions(int k, int[] prices) {
+    int buy[] = new int[k + 1];
+    int sell[] = new int[k + 1];
+    Arrays.fill(buy, Integer.MAX_VALUE);
+
+    for (int price : prices) {
+      for (int i = 1; i <= k; i++) {
+        buy[i] = Math.min(buy[i], price - sell[i - 1]);
+        sell[i] = Math.max(sell[i], price - buy[i]);
+      }
+    }
+    return sell[k];
   }
 
 
