@@ -31,4 +31,34 @@ public class KadaneAlgo {
 
   }
 
+  public int maxProduct(int[] nums) {
+    if (nums.length == 1) {
+      return nums[0];
+    }
+
+    int result = Integer.MIN_VALUE;
+    int cur = 0;
+
+    for (int i = 0; i < nums.length; i++) {
+      if (cur == 0) {
+        cur = nums[i];
+      } else {
+        cur *= nums[i];
+      }
+      result = Math.max(result, cur);
+    }
+
+    cur = 0;
+    for (int i = nums.length - 1; i >= 0; i--) {
+      if (cur == 0) {
+        cur = nums[i];
+      } else {
+        cur *= nums[i];
+      }
+      result = Math.max(result, cur);
+    }
+
+    return result;
+  }
+
 }
