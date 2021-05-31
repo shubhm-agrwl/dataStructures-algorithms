@@ -17,6 +17,8 @@ local.properties
 .settings/
 .loadpath
 *.pub
+*.idea/
+*.iml
 
 # Compiled class file
 *.class
