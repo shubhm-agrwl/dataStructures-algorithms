@@ -3,7 +3,10 @@ package com.shubham.dataStructures.hashMap;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 import java.util.TreeSet;
 
 public class FourSum {
@@ -90,6 +93,61 @@ public class FourSum {
       this.first = first;
       this.second = second;
     }
+  }
+
+  public List<List<Integer>> fourSumSolution(int[] nums, int target) {
+    Arrays.sort(nums);
+    return kSum(nums, target, 0, 4);
+  }
+
+  public List<List<Integer>> kSum(int[] nums, int target, int start, int k) {
+    List<List<Integer>> res = new ArrayList<>();
+    if (start == nums.length || nums[start] * k > target || target > nums[nums.length - 1] * k) {
+      return res;
+    }
+    if (k == 2) {
+      return twoSum(nums, target, start);
+    }
+    for (int i = start; i < nums.length; ++i) {
+      if (i == start || nums[i - 1] != nums[i]) {
+        for (List<Integer> set : kSum(nums, target - nums[i], i + 1, k - 1)) {
+          res.add(new ArrayList<>(Arrays.asList(nums[i])));
+          res.get(res.size() - 1).addAll(set);
+        }
+      }
+    }
+    return res;
+  }
+
+  public List<List<Integer>> twoSum(int[] nums, int target, int start) {
+    List<List<Integer>> res = new ArrayList<>();
+    Set<Integer> s = new HashSet<>();
+    for (int i = start; i < nums.length; ++i) {
+      if (res.isEmpty() || res.get(res.size() - 1).get(1) != nums[i]) {
+        if (s.contains(target - nums[i])) {
+          res.add(Arrays.asList(target - nums[i], nums[i]));
+        }
+      }
+      s.add(nums[i]);
+    }
+    return res;
+  }
+
+  public int fourSumCount(int[] nums1, int[] nums2, int[] nums3, int[] nums4) {
+    Map<Integer, Integer> map = new HashMap<>();
+
+    for (int i : nums1) {
+      for (int j : nums2) {
+        map.put(i + j, map.getOrDefault(i + j, 0) + 1);
+      }
+    }
+    int count = 0;
+    for (int k : nums3) {
+      for (int l : nums4) {
+        count += map.getOrDefault(-(k + l), 0);
+      }
+    }
+    return count;
   }
 
 }

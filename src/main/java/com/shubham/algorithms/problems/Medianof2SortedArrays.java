@@ -27,7 +27,7 @@ public class Medianof2SortedArrays {
 
     int nums[] = {1, 2};
     int nums2[] = {3, 4};
-    System.out.println(Medianof2SortedArrays.findMedianSortedArrays(nums, nums2));
+    System.out.println(Medianof2SortedArrays.findMedianSortedArraysSol(nums, nums2));
 
   }
 
@@ -70,7 +70,7 @@ public class Medianof2SortedArrays {
     return resarr[resarr.length - 1];
   }
 
-  public double findMedianSortedArraysSol(int[] nums1, int[] nums2) {
+  public static double findMedianSortedArraysSol(int[] nums1, int[] nums2) {
     int m = nums1.length;
     int n = nums2.length;
     if (m > n) { // to ensure m<=n

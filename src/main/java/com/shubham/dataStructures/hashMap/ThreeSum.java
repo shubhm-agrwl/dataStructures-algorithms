@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.TreeSet;
 
 public class ThreeSum {
@@ -105,6 +106,52 @@ public class ThreeSum {
       }
     }
     return pair;
+  }
+
+  public List<List<Integer>> threeSum(int[] nums) {
+    if (nums.length < 3) {
+      return new ArrayList();
+    }
+    Set<List<Integer>> set = new HashSet<>();
+    Arrays.sort(nums);
+    int n = nums.length;
+    for (int i = 0; i < n - 2; i++) {
+      int j = i + 1;
+      int k = n - 1;
+      while (j < k) {
+        int sum = nums[i] + nums[j] + nums[k];
+        if (sum == 0) {
+          set.add(Arrays.asList(nums[i], nums[j++], nums[k--]));
+        } else if (sum > 0) {
+          k--;
+        } else {
+          j++;
+        }
+      }
+    }
+    return new ArrayList(set);
+  }
+
+  public int threeSumClosest(int[] nums, int target) {
+    int diff = Integer.MAX_VALUE;
+    Arrays.sort(nums);
+    int n = nums.length;
+    for (int i = 0; i < n - 2; i++) {
+      int j = i + 1;
+      int k = n - 1;
+      while (j < k) {
+        int sum = nums[i] + nums[j] + nums[k];
+        if (Math.abs(target - sum) < Math.abs(diff)) {
+          diff = target - sum;
+        }
+        if (sum > target) {
+          k--;
+        } else {
+          j++;
+        }
+      }
+    }
+    return target - diff;
   }
 
 }
