@@ -74,7 +74,6 @@ public class Devide2Integers {
     }
     return -quotient + 1;
 
-
   }
 
 }
