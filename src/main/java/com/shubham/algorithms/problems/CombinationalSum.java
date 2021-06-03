@@ -49,8 +49,8 @@ public class CombinationalSum {
     return res;
   }
 
-  private static void findNumbers(int[] candidates, int sum,
-      List<List<Integer>> res, List<Integer> r, int i) {
+  private static void findNumbers(int[] candidates, int sum, List<List<Integer>> res,
+      List<Integer> r, int i) {
 
     // If  current sum becomes negative
     if (sum < 0) {

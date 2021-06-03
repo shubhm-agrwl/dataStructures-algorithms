@@ -21,7 +21,7 @@ public class CountSay {
   */
 
   public static void main(String[] args) {
-    System.out.println(countAndSay(4));
+    System.out.println(countAndSay2(4));
   }
 
   private static String countAndSay(int n) {
@@ -84,4 +84,36 @@ public class CountSay {
     }
     return str;
   }
+
+  public static String countAndSay2(int n) {
+    if (n == 1) {
+      return "1";
+    }
+    int temp = n;
+
+    int t = 11;
+    String res = "11";
+    for (int i = 3; i <= n; i++) {
+
+      res = countSay(t);
+      t = Integer.parseInt(res);
+    }
+    return res;
+  }
+
+  public static String countSay(int n) {
+    String res = "";
+    while (n > 0) {
+      int d = n % 10;
+      int c = 0;
+      while (n % 10 == d) {
+        c++;
+        n = n / 10;
+      }
+      String temp = String.valueOf(c) + String.valueOf(d);
+      res = temp + res;
+    }
+    return res;
+  }
+
 }
