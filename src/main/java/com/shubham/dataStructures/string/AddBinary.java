@@ -1,5 +1,7 @@
 package com.shubham.dataStructures.string;
 
+import java.math.BigInteger;
+
 public class AddBinary {
 
   public static void main(String[] args) {
@@ -17,7 +19,7 @@ public class AddBinary {
       String tmp = a;
       a = b;
       b = tmp;
-    }else {
+    } else {
       firstStringPointer = a.length();
       secondStringPointer = b.length();
     }
@@ -82,6 +84,20 @@ public class AddBinary {
       return "1" + res;
     }
     return res;
+  }
+
+  public String addBinaryLC(String a, String b) {
+    BigInteger x = new BigInteger(a, 2);
+    BigInteger y = new BigInteger(b, 2);
+    BigInteger zero = new BigInteger("0", 2);
+    BigInteger carry, answer;
+    while (y.compareTo(zero) != 0) {
+      answer = x.xor(y);
+      carry = x.and(y).shiftLeft(1);
+      x = answer;
+      y = carry;
+    }
+    return x.toString(2);
   }
 
 }
